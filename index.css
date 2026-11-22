@@ -1,0 +1,12 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{@apply font-sans text-slate-700 antialiased}
+h1,h2,h3{@apply font-serif font-semibold text-navy leading-tight}
+:focus-visible{outline:3px solid #C5A36A;outline-offset:3px}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.rise{animation:rise .9s ease both}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rise{animation:none}}
+.btn{@apply inline-block px-7 py-4 font-semibold border border-gold transition-colors cursor-pointer}
+.btn-gold{@apply bg-gold text-navy hover:bg-[#d6b67f]}
+.btn-line{@apply text-white hover:bg-gold/20}
+.btn-dark{@apply bg-navy text-white border-navy hover:bg-[#1b3a5e]}
